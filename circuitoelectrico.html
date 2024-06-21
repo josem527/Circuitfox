@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial -scale=1, maximum-scale=1"/>
+  <script type="text/javascript" languaje="javascript" src="js/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="Proyecto/css/estiloinicio.css">
+  <link rel="shortcut icon" href="image/ZORRO 150.svg"type="image/x-icon">
+  <script type="text/javascript" languaje="javascript" src="js/main.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet"><!--fuente CircuitFOX-->
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Lobster+Two&family=Londrina+Solid&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.6/css/boxicons.min.css' rel='stylesheet'>
+  <!-- or -->
+  <link href='https://unpkg.com/boxicons@2.0.6/css/boxicons.min.css' rel='stylesheet'>
+
+
+  <title>CircuitFox</title>
+</head>
+<body id="coten" >
+
+    <nav class="navbar navbar-expand-md navbar-light navbar-dark navbar-default navbar-fixed-top" style="background-color: #3867d6; border-bottom: 1px solid transparent; box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .5);position: fixed;z-index: 100;
+      transition: ease-in-out 0.5s;width: 100%" >
+      <div class="container">
+
+           <a class="navbar-brand" href="#"style="font-family: 'Yesteryear', cursive;font-size:40px;color:white">CircuitFox<img src="image/ZORRO.svg" width="60" height="60" class="d-inline-block align-top" alt="" loading="lazy"></a>
+
+           <a class="d-block text-light p-1" href="#coten" >
+             <path fill-rule="evenodd" d="M3 13a.5.5 0 0 0 .5-.5v-10a.5.5 0 0 0-1 0v10a.5.5 0 0 0 .5.5z"/>
+               <path  fill-rule="evenodd" d="M5.354 4.854a.5.5 0 0 0 0-.708l-2-2a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L3 3.207l1.646 1.647a.5.5 0 0 0 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 9a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/></svg></a>
+            
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+           <span class="navbar-toggler-icon"></span>
+           </button>
+
+
+          <div class="collapse navbar-collapse" id="navbarText">
+
+               <ul class="navbar-nav mr-auto">
+                 <li class="nav-item ">
+                   <a class="nav-link" href="index.php"><i class='bx bx-home-alt' ></i> </i> Inicio </a>
+                 </li>
+                 <li class="nav-item active">
+                   <a class="nav-link" href="contenido.html" ><i class='bx bx-book-alt'></i> Contenidos</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="herramientas.html"><i class='bx bxs-shapes'></i> Herramientas</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="bibliografia.html"><i class='bx bxs-bookmark-star'></i> Bibliografía</a>
+                 </li>
+               </ul>
+
+     
+    
+             <!-- <form class="collapse multi-collapse"id="bon" style="background-color: #b2bec3;border-radius: 20px;padding:5px 0;border:2px solid #182C61">
+
+               <div class="container">                  
+                   <div class="form-group">
+                       <label for="exampleDropdownFormEmail2">Usuario</label>
+                       <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                   </div>
+                   <div class="form-group">
+                       <label for="exampleDropdownFormPassword2">Contraseña</label>
+                      <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Contraseña">
+                   </div>
+
+                   <button type="submit" class="btn btn-primary">Entrar</button>
+
+               </div>
+             </form>
+ -->
+            <style>
+            li:hover {
+              background-color: #55A5FC; 
+              border-radius: 5px
+            }
+            </style>
+               <ul class="nav navbar-nav navbar-right">
+              <a href="registro.php"type="button" class="btn btn-sm" aria-controls=""style="background-color: #2ecc71;color:white">¡ Contáctenos !</a>
+                   
+            </ul>
+
+          </div>
+      </div>      
+    </nav>
+
+
+    <div class="container-fluid" id="contenidoss">
+      <div class="row">
+        <div class="col-sm-4 col-md-4 col-lg-3"style="margin-top: 6%"><br><br><br>
+           <h3 style="text-align: center;background-color:#3867d6;border:5px solid #182C61;border-radius: 5px;color: white;font-family: 'Londrina Solid', cursive;font-size: 40px" > Contenidos
+           <button class="btn bd-search-docs-toggle d-md-none p-0 ml-3 collapsed" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" style="border:solid #3867d6;border-radius: 5px" focusable="true"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+           </button></h3>
+
+   
+          <nav id="navbarToggleExternalContent" class="navbar navbar-light"style="border-radius: 4px;background-color: #182C61;border:5px solid #3867d6 ">
+  
+            <nav class="nav nav-pills flex-column">
+              <div class="d-block text-light p-1" href="#item1"><b>CONCEPTOS BÁSICOS</b></div>
+                 <a class="nav-link text-light p-3 active" href="">Circuito Eléctrico</a>
+                 <a class="nav-link text-light p-3" href="parametrosbasicos.html">Parámetros básicos de un Cto.</a>
+                 <a class="nav-link text-light p-3" href="topologiasdered.html">Topología de redes</a>
+              <div class="nav-link text-light p-1" href=""><b>LEYES BÁSICAS</b></div>
+                 <a class="nav-link text-light p-3" href="leydeohm.html">Ley de Ohm</a>
+                 <a class="nav-link text-light p-3" href="kirchhoff.html">Leyes de Kirchhoff</a>
+                 <a class="nav-link text-light p-3" href="divisores.html">Divisores de voltaje y corriente</a>
+              <div class="nav-link text-light p-1" href=""><b>MÉTODOS DE ANÁLISIS</b></div>
+                 <a class="nav-link text-light p-3" href="nodos.html">Análisis por nodos</a>
+                 <a class="nav-link text-light p-3" href="mallas.html">Análisis por mallas</a>
+              <div class="nav-link text-light p-1" href=""><b>TEOREMAS DE CIRCUITOS BÁSICOS</b></div>
+                 <a class="nav-link text-light p-3" href="thevenin.html">Teorema de Thevenin</a>
+                 <a class="nav-link text-light p-3" href="norton.html">Teorema de Norton</a>
+       
+
+            </nav>
+          </nav>
+        </div>
+ 
+
+        <div class="col-sm-8 col-md-8 col-lg-9"style="margin-top: 5%;"><br><br><br>
+          <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+            <div class="card-header">
+
+              <ul class="nav nav-tabs card-header-tabs" role="tablist" style="background-color: #E7EEF5">
+                <li class="nav-item"role=""><a class="nav-link active" href="#tema1" aria-controls="tema1" data-toggle="tab"style="color: black">Objetivos</a> 
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#tema2" aria-controls="tema2" data-toggle="tab"style="color: black">Tema</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tema3" aria-controls="tema3" data-toggle="tab"style="color: black">Ejercicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tema4" aria-controls="tema4" data-toggle="tab"style="color: black">Evaluación</a></li>
+              </ul>
+                  <!-- TEMAS -->
+              <div class="tab-content"style="padding:0 10px;text-align: justify;"><br>
+                      
+                  <div role="tabpanel" class="tab-pane active" id="tema1">
+
+                          <img src="image/Conceptos básicos.gif" class="img-fluid" alt="Responsive image" width="100%">
+                        
+                        </div>
+
+                      <div role="tabpanel" class="tab-pane" id="tema2">
+
+
+                        <img src="image/1.png" class="img-fluid" alt="Responsive image" width="100%"><br><br>
+
+                        <h5>¿Qué es un circuito eléctrico?</h5><br>
+                      <div class="row">
+                        <p class="col-sm-7 col-md-12 col-lg-8">Un circuito eléctrico es la combinación de componentes conectados entre sí de manera que integran una o más trayectorias cerradas que permiten la circulación de la corriente y el aprovechamiento de ésta para la realización de un trabajo útil en la disciplina de la eléctronica. Para comenzar a entrar en detalle con los circuitos eléctricos se debe tener en cuenta sus principales elementos que lo conforman como también sus simbologías que lo representan, es por esto que a continuación se presentarán los elementos más característicos de un Circuito Eléctrico simple.<br>
+                        La conexión de una bateria, una lampara y alambres de conexión conectados en serie es lo que caracteriza el circuito eléctrico simple. Vease la figura 1. </p>
+                        <div class="text-right"style="margin: 0 auto;border: solid #273c75;border-radius: 5px">
+                        <img src="image/fuentebombilla.gif" class="rounded" alt="Responsive image"><br><p style="text-align: center;"><b>Figura 1.</b> Circuito eléctrico simple.</p>
+                        </div>
+                      </div>
+  
+
+                    <div class="row">
+
+                          <div class="col-lg-6">
+                             <br>
+                              <h5>Elementos que caracterizan un Circuito Eléctrico simple</h5>
+                              <p style="text-align: justify">En un circuito eléctrico puede diferenciarse cuatro tipos de elementos: generadores, conductores, receptores de maniobra y de protección. Para que exista un circuito debe haber al menos un componente de cada uno de los primeros tres elementos descritos. </p><br>
+                              <div class="text-center">
+                               <img style="border: solid #273c75;border-radius: 5px "src="image/receptgenreg.jpg" class="rounded" alt="Responsive image"width="85%"><br><b>Figura 2.</b> Elementos de un circuito.</p>
+                               </div><br>
+                              <h5>Generadores</h5>
+                                <p>Es considerado un elemento que produce energía, donde mantiene una diferencia de potencial electrico y su magnitud se denota en voltios. Existen dos tipos de generadores que suministran corriente eléctrica, uno de ellos es la fuente de corriente directa (DC) y fuente de corriente alterna (AC), la diferencia entre éstas  es que para la fuente DC se mantiene un voltaje constante ya que no varía con el tiempo y para la fuente AC su voltaje cambia en función del tiempo. </p>
+                               
+                               <div class="text-center">
+                               <img src="image/generador.jpg" class="rounded" alt="Responsive image"width="60%"style="border: solid #273c75;border-radius: 5px "><br><p style="text-align: center;"><b>Figura 3.</b> Bateria eléctrica.</p>
+                               </div><br>
+
+                               <p>El principal interés en esta plataforma es hacer los análisis cuantitativos de los circuitos con fuentes de corriente directa, es decir, con valores constantes en los voltajes.</p>
+
+                                 <div class="embed-responsive embed-responsive-16by9">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9QXaeUm3M0E" allowfullscreen></iframe>
+                            </div><br> 
+
+                               
+
+
+
+                          </div>
+
+               
+                             <div class="col-lg-6">
+                              <br>
+                              <h5>Conductores</h5>
+                               <p>Son los elementos que tienen un alto nivel de permisividad en el flujo de la corriente, sirviendo así como una trayectoria o camino de circulación de electrones para que finalmente lleguen a los demás componentes del circuito. Los materiales más comunes con los que se fabrican los conductores son: el aluminio y el cobre. La intensidad de flujo de corriente que se mueve a través del circuito se expresa en Amperios (A).</p>
+                                <div class="text-center">
+                               <img style="border: solid #273c75;border-radius: 5px "src="image/cableelec.jpg" class="rounded" alt="Responsive image"width="70%"><br><b>Figura 4.</b> Cable de cobre.</p>
+                               </div><br>
+
+                               <div class="embed-responsive embed-responsive-16by9">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ugff57Hqvww" allowfullscreen></iframe>
+                            </div><br> 
+                               <h5>Receptores</h5>
+                               <p>Son los elementos que reciben la energía eléctrica del circuito para así transformarla en otro tipo de energía o señal deseada produciendo algún efecto o trabajo. En el caso de la Figura 1 se observa que la bombilla recibe la corriente y la transforma en luz (energía por la cantidad de  fotones en movimiento), lo mismo pasaría si la recibiera una resistencia, produciendo a su vez energía calorífica y el timbre produciendo sonido.</p>
+                               <div class="text-center">
+                               <img style="border: solid #273c75;border-radius: 5px "src="image/receptores.jpg" class="rounded" alt="Responsive image"width="85%"><br><b>Figura 5.</b> Receptores eléctricos.</p>
+                               </div><br>
+
+                               <div class="embed-responsive embed-responsive-16by9">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WhDT-80eKGA" allowfullscreen></iframe>
+                            </div><br>
+
+
+
+                                <br>  
+                                <h5>Características de los circuitos eléctricos</h5>    
+                                <p>• El circuito debe tener una trayectoria cerrada, del mismo modo que se conecte con una referencia negativa o a tierra.</p>
+                                <p>• Posee una fuente de voltaje ya que sin ésta no hay flujo de corriente. </p>
+                                <p>• La trayectoria o camino (alambre) por donde circula la corriente, presenta una baja oposición (resistencia) lo que genera una pérdida de energía y así mismo una transformación de energía eléctrica a energía calorífica.</p><br>
+                             </div>
+
+                   </div><br>
+                  
+
+
+
+                 </div><!-- PESTAÑA EJERCICIOS -->
+
+            <div role="tabpanel" class="tab-pane" id="tema3">
+              <div>
+               <img src="image/ejercicios.png" class="img-fluid" alt="Responsive image" width="100%"><br><br> 
+               </div>
+
+               <div class="alert alert-dark"><strong>TEMA: Circuito Eléctrico <hr></strong>Seleccione el ejercicio que desea desarrollar: </div>
+
+                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                     <li class="nav-item" role="presentation">
+                       <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-primero" role="tab" aria-controls="pills-home" aria-selected="true">Ejercicio 1</a>
+                     </li>
+                     <li class="nav-item" role="presentation">
+                       <a class="nav-link text" id="pills-profile-tab" data-toggle="pill" href="#pills-segundo" role="tab" aria-controls="pills-profile" aria-selected="false">Ejercicio 2</a>
+                     </li>
+                     <li class="nav-item" role="presentation">
+                       <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-tercero" role="tab" aria-controls="pills-contact" aria-selected="false">Ejercicio 3</a>
+                     </li>
+                     <li class="nav-item" role="presentation">
+                       <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-cuarto" role="tab" aria-controls="pills-contact" aria-selected="false">Ejercicio 4</a>
+                     </li>
+                    <li class="nav-item" role="presentation">
+                       <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-quinto" role="tab" aria-controls="pills-contact" aria-selected="false">Ejercicio 5</a>
+                     </li>
+                   </ul>
+                   <div class="tab-content" id="pills-tabContent">
+                     <div class="tab-pane fade show active" id="pills-primero" role="tabpanel" aria-labelledby="pills-primero-tab">
+
+                       <h6>¿Cuáles son las características de un Circuito Eléctrico y mencione sus elementos comunes?</h6><br><br>
+
+
+
+
+                     </div>
+                     <div class="tab-pane fade" id="pills-segundo" role="tabpanel" aria-labelledby="pills-segundo-tab">
+
+                     
+                    <h6>¿Cuáles son las características principales de los generadores, mencione sus dos tipos?</h6><br><br>
+
+                       
+
+                     </div>
+                     <div class="tab-pane fade" id="pills-tercero" role="tabpanel" aria-labelledby="pills-tercero-tab">
+                       
+                    <h6>¿Qué material conductor permite mayor paso de electrones dentro de una trayectoria?</h6><br><br>
+
+
+                     </div>
+                     <div class="tab-pane fade" id="pills-cuarto" role="tabpanel" aria-labelledby="pills-cuarto-tab">
+                    
+                    <h6>Escriba los receptores eléctricos más utilizados.</h6><br><br>
+
+
+                     </div>
+                     <div class="tab-pane fade" id="pills-quinto" role="tabpanel" aria-labelledby="pills-quinto-tab">
+                       
+                    <h6>¿Qué elemento común de los generadores se utiliza en los Circuitos Eléctricos?</h6><br><br>
+
+
+                     </div>
+                   </div>
+
+                </div><!-- PESTAÑA DE EVALUACIÓN -->
+
+
+                <div role="tabpanel" class="tab-pane" id="tema4">
+
+                  <div>
+                    <img src="image/evaluación.png" class="img-fluid" alt="Responsive image" width="100%"><br><br>
+                  </div>
+
+                    
+<style type="text/css">
+
+div#contenedor{
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: white;
+  padding: 0.5em;
+  color: black;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+a:active {
+  color: black;
+}
+
+</style>
+
+<script type="text/javascript">
+
+
+var respuestaCorrecta = new Array("1.3", "2.1", "3.3", "4.4", "5.1");
+    
+    function comprobarRadio(matriz){
+
+
+    
+      var numeroRespuestasOK=0;
+      var numeroRespuestasKO=0;
+      var ponderadoOK=0;
+      var mensaje= document.getElementById("mensaje");
+      var solucion = document.getElementById("solucion");
+      var tablaResultados ="<table border='1'>";
+      
+      for(j=0; j< matriz.length; j++){
+      var radios = document.getElementsByName(j+1);
+        for(i=0; i< radios.length;i++){
+          if (radios[i].checked){
+          var valor =  radios[i].value;
+            if(valor == matriz[j]) {
+            tablaResultados+= "<tr><td>Respuesta correcta: </td>"+ "<td>"+ valor + "</td></tr>";
+            numeroRespuestasOK++;
+            break;
+            }else {
+            tablaResultados+= "<tr><td>Respuesta incorrecta: </td><td>"+ valor + "</td></tr>";
+            numeroRespuestasKO++;
+            break;
+            }
+          }
+        }
+        // Condición de Evaluación
+      if(numeroRespuestasOK >= 3){
+        ponderado="¡Felicidades aprobaste el tema continua así!"; 
+      }
+      else{
+        ponderado="No alcanzaste pero continua intentando te falta poco :)"
+
+      }
+
+      }
+      var numeroRespuestasNulas=matriz.length - (numeroRespuestasOK + numeroRespuestasKO);
+      tablaResultados+="<tr><td>Resultado Total:<br>"+ponderado+"</br> </td><td>Respuestas correctas: "+numeroRespuestasOK+"<br/>Respuestas incorrectas: "+ numeroRespuestasKO+"<br/>Respuestas en blanco: "+ numeroRespuestasNulas+"<br/> </td></tr></table>";
+      solucion.innerHTML = tablaResultados;
+
+       
+      
+  }
+  
+
+</script>
+
+<script >
+  function unselect(){
+  document.querySelectorAll('[name="1"]').forEach((a) => a.checked=false);
+  document.querySelectorAll('[name="2"]').forEach((a) => a.checked=false);
+  document.querySelectorAll('[name="3"]').forEach((a) => a.checked=false);
+  document.querySelectorAll('[name="4"]').forEach((a) => a.checked=false);
+  document.querySelectorAll('[name="5"]').forEach((a) => a.checked=false);
+}
+</script>
+
+<div id="contenedor">
+
+<div class="alert alert-dark"><strong>TEMA: Circuitos Eléctricos <hr></strong>Seleccione las respuestas y oprima el botón de Enviar. </div>
+<h4></h4>
+<div class="row">
+  <div class="col-md-6">
+<hr>Un circuito eléctrico está caracterizado por:<br><br>
+
+    <input type="radio" value="1.1" name="1"/> <b>1.1.</b> Mantener una trayectoria abierta de elementos eléctricos.  <br>
+    <input type="radio" value="1.2" name="1"/> <b>1.2.</b> Símbolos eléctricos de solo resistencias en paralelo y serie.  <br>
+    <input type="radio" value="1.3" name="1"/> <b>1.3.</b> Combinación de componentes que integran una o más trayectorias cerradas. <br>
+    <input type="radio" value="1.4" name="1"/> <b>1.4.</b> Todas las anteriores. <br><br><hr>
+
+El generador se encarga de: <br><br>
+
+    <input type="radio" value="2.1" name="2"/> <b>2.1.</b> Producir energía eléctrica para todo el circuito  <br>
+    <input type="radio" value="2.2" name="2"/> <b>2.2.</b> Proteger el circuito de una sobre carga. <br>
+    <input type="radio" value="2.3" name="2"/> <b>2.3.</b> Recibir energía eléctrica.<br>
+    <input type="radio" value="2.4" name="2"/> <b>2.4.</b> Todas las anteriores.<br><br><hr>
+
+Para crear y mantener una corriente eléctrica necesitamos: <br><br>
+    <input type="radio" value="3.1" name="3"/>  <b>3.1.</b> Un generador y un receptor. <br>
+    <input type="radio" value="3.2" name="3"/>  <b>3.2.</b> Un generador y un conductor.<br>
+    <input type="radio" value="3.3" name="3"/>  <b>3.3.</b> Un generador, un receptor y un conductor.<br>
+    <input type="radio" value="3.4" name="3"/>  <b>3.4.</b> Un receptor y un conductor.<br><br><hr>
+  </div>
+  <div class="col-md-6"><hr>
+
+Un conductor sirve para: <br><br>
+
+    <input type="radio" value="4.1" name="4"/>  <b>4.1.</b> Hacer resistencia a la corriente eléctrica. <br>
+    <input type="radio" value="4.2" name="4"/>  <b>4.2.</b> Proteger el circuito de las sobre cargas. <br>
+    <input type="radio" value="4.3" name="4"/>  <b>4.3.</b> Alimentar el circuito por medio de energía eléctrica. <br>
+    <input type="radio" value="4.4" name="4"/>  <b>4.4.</b> Permite el paso de la corriente para que llegue a la carga o los elementos conectados. <br><br><hr>
+
+ Los receptores son:<br><br>
+ 
+    <input type="radio" value="5.1" name="5"/>  <b>5.1.</b> Los alambres por donde fluye la corriente eléctrica.<br>
+    <input type="radio" value="5.2" name="5"/>  <b>5.2.</b> La batería que alimenta el circuito.<br> 
+    <input type="radio" value="5.3" name="5"/>  <b>5.3.</b> Los elementos que transforman la electricidad en otro tipo de energía o señal.<br>
+    <input type="radio" value="5.4" name="5"/>  <b>5.4.</b> Todas las anteriores. <br><br><hr>
+   </div>
+  </div>
+
+
+  <input class="btn btn-success btn-lg" type="button" value="Enviar" onclick="comprobarRadio(respuestaCorrecta)"/>
+ <button class="btn btn-danger btn-lg"id="unselect" onclick="unselect()">Reset</button><br><br>
+
+  <div style="color:blue;font-size: 20px" id="solucion"></div>
+ </div>
+ 
+
+
+
+                </div>
+
+            </div>
+                   
+          </div>
+        </div>
+      </div>
+    </div>
+<button class="fas fa-chevron-up" style="font-size:20px"onclick="topFunction()" id="myBtn" title="Go to top"></button>
+
+  <script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<style type="text/css">
+  #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  opacity: 0.8;
+  outline: none;
+  background-color: #636e72;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+<script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
+
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<?php
+
+ require 'database.php'
+
+ ?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial -scale=1, maximum-scale=1">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> Escala el tamaño de la pantalla al tamaño del dispositivo, manteniendo los tamaños de los elementos. -->
+  <script type="text/javascript" languaje="javascript" src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" languaje="javascript" src="js/main.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="shortcut icon" href="image/ZORRO 150.svg" type="image/x-icon">
+  <link rel="stylesheet" href="../Proyecto/css/estiloinicio.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&amp;display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel=" stylesheet " href=" https://unpkg.com/aos@next/dist/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <!--font awesone search-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> <!-- Efectos bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--iconos de facebook, twitter y google-->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Yesteryear&amp;display=swap" rel="stylesheet">
+  <!--fuente CircuitFOX-->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&amp;display=swap" rel="stylesheet"> <!-- Fuente: iniciar sesión y registro -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!--  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <title>CircuitFox</title>
+</head>
+
+<body>
+  <header>
+    <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%">
+        <path d="M0.00,49.98 C149.99,150.00 356.37,-13.31 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: white"></path>
+      </svg></div> <!-- Decoración Wave-->
+    <!-- height="200" -->
+    <!--<nav>
+        <div class="portimg">
+		 <ul class="menu" id="ull">
+		   <li> <a href="#" id="bot1"><i style='font-size:15px' class='fas'>&#xf2bd;</i>&nbsp;<b>INICIAR SESIÓN</b></a></li>
+	       <li> <a href="#" id="bot2"><i style='font-size:12px' class='fas user-plus'>&#Xf234;</i>&nbsp;<b>REGISTRO</b></a>
+	       </li> -->
+    <!--Ingreso de texto busqueda-->
+    <!--  <form action="post" name="searc">
+	    	
+	        <input type="text" class="form-control form-control-sm" name="busqueda" id="buscar" onkeyup="clickme(this)" value=""></form>
+	        <li> <a href="#"><i class="fas fa-search"></i></a></li>
+	    </ul>
+    <div id="log" name="Formato inicio de sesion">
+  	        <div class="headlog"><i class="fas fa-user-circle"style='color: #313D56;font-size: 80px; margin-top: 8px;border:none'></i><br></div>  -->
+    <!-- 
+	 <form class="login">
+		   
+		    <i class="fas fa-user"style='color: white;margin-left:10px'></i>
+            <input type="text" placeholder="Usuario"size="25"style='text-align: center;margin-bottom: 4px;margin-left:10px; margin-top:40px' required><br>
+            <i class="fas fa-key icon" style='color: white;font-size: 14px;margin-left:10px'></i>
+            <input type="password" placeholder="Contraseña"size="25" style='margin-left: 10px;margin-top: 20px;text-align: center' required><br>
+            <input class="acept" type="submit" value=" Continuar " style='margin-left: 100px;margin-top: 20px;cursor: pointer;margin-bottom: 7px'>
+        </form>    
+    </div> -->
+    <!-- <div id="reg">
+
+    	<div class="headreg"><i class="fas fa-user-plus" style='margin-left: 20px;font-size: 60px;color:#313D56;margin-top:20px'></i><br></div>
+        
+        <form class="register">  
+
+    		
+    		<input input type="text" placeholder="Nombres" size="30"style='margin-left: 10px;margin-bottom: 5px;margin-top: 40px'><br>
+    		<input input type="text" placeholder="Usuario"size="30"style='margin-left: 10px;margin-bottom: 5px'><br>
+    		<input input type="email" placeholder="Correo"size="30"style='margin-left: 10px;margin-bottom: 5px'><br>
+    		<input input type="text" placeholder="Código"size="30"style='margin-left: 10px;margin-bottom: 5px'><br>
+    		<input type="password" placeholder="Contraseña"size="30"style='margin-left: 10px;margin-bottom: 5px'><br>
+    		<input class="acept" type="submit" value=" Registrar "style='margin-left: 90px;margin-bottom: 10px'>
+    	
+    	</form> 
+           
+    </div>
+     </div>
+	</nav>-->
+  </header>
+  <div id="imglog" alt="">
+    <h1>CircuitFox</h1>
+    <img src="../Proyecto/image/oie_transparent (1).png" alt="">
+  </div>
+  <h2 style="text-align: center;font-size: 4vw;margin:5%s auto;">Encuentra en nuestra plataforma</h2>
+  
+  <div class="menu2">
+    <button type="text" class="btn btn-primary">CONTENIDOS</button>
+    <button type="text" class="btn btn-secondary">EJERCICIOS</button>
+    <button type="text" class="btn btn-success">BIBLIOGRAFÍAS</button>
+    <button type="text" class="btn btn-danger">VIDEOS</button>
+  </div>
+  <div class="slider1">
+    <div class="slider-contenedor">
+      <slide class="contenido-slider">
+        <div>
+          <h2>¡Desarrolla tus habilidades haciendo uso del AVA de CircuitFox desde tu laptop o smartphone!</h2>
+          <a href="#">Contact us</a>
+        </div>
+        <img src="image/animacion.svg" alt="">
+      </slide>
+      <slide class="contenido-slider">
+        <div>
+          <h2>Organiza tu tiempo para estudiar desde cualquier espacio de tu universidad</h2>
+          <a href="#">Contact us</a>
+        </div>
+        <img src="image/animacion2.svg" alt="">
+      </slide>
+      <slide class="contenido-slider">
+        <div>
+          <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsa ipsam aliquam natus quidem sed. Quos cupiditate id delectus est.</h2>
+          <a href="#">Contact us</a>
+        </div>
+        <img src="image/animacion3.svg" alt="">
+      </slide>
+      <slide class="contenido-slider">
+        <div>
+          <h2>¡Desarrolla tus habilidades haciendo uso del AVA de CircuitFox desde tu laptop o smartphone!</h2>
+          <a href="#">Contact us</a>
+        </div>
+        <img src="image/animacion.svg" alt="">
+      </slide>
+    </div>
+  </div>
+  <div class="contenedor">
+    <section data-aos="zoom-in" class="subcon">
+      <img class="logo" src="image/electronica.jpg" style=" display:block;margin-left: auto;margin-right: auto">
+      <h1>¡Bienvenido!</h1>
+      <p>La plataforma virtual de CircuitFox cuenta con los temas orientados a los circuitos eléctricos básicos que conlleva a comprender el análisis conceptual y matemático en los temas básicos de la eléctronica. <br>La página posee instrumentos como la calculadora de voltaje, corriente y resistencias haciendo uso de la ley de Ohm, como también ejercicios prácticos y un espacio de blog con información relevante acerca de Electrónica, dentro de ésta puedes encontrar vídeos educativos que pueden aportar con tu proceso académico en la disciplina.</p>
+    </section>
+    <aside data-aos="zoom-in" class="subcon">
+      <img class="logo" src="image/simbolos_electricos.png" style=" display:block;margin-left: auto;margin-right: auto">
+      <h1 class="subtit">Simbologia</h1>
+      <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker software like Aldu.</p>
+    </aside>
+    <article data-aos="zoom-in" class="subcon">
+      <img class="logo" src="image/Mathe.jpg" style=" display:block;margin-left: auto;margin-right: auto">
+      <h1>Algebra</h1>
+      <p> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker software like Aldu.</p>
+    </article>
+  </div>
+  <div class="contenidos">
+    <h2 style="font-size:50px;text-align:center">¡Nuestros contenidos!</h2>
+    <div class="contenedor-articulo">
+      <div class="articulo" data-aos="zoom-in-right">
+        <img src="image/circuitbas.JPG">
+        <h3>Conceptos básicos de Circuitos Eléctricos</h3>
+        <p>Después de que el hombre descubrió la energía eléctrica y la forma de producirla en grandes cantidades, quiso emplearla de forma productiva, razón por la cual lo llevo a crear los circuitos eléctricos. Este tema está orientado en el estudio teórico de los circuitos eléctricos y los elementos que lo conforman.</p>
+        <a href="#">Read more ---&gt;</a>
+      </div>
+      <div class="articulo" data-aos="zoom-in-right">
+        <img src="image/iconcir.JPG" width="60" height="60">
+        <h3>Leyes básicas</h3>
+        <p>En el anterior apartado se presentaron los temas relacionados con los conceptos básicos como corriente, tensión y potencia en un circuito eléctrico. Es por esto que para determinar de forma matemática los valores de esas variables, se requiere conocer algunas leyes fundamentales de los circuitos eléctricos. </p>
+        <a href="#">Read more ---&gt;</a>
+      </div>
+      <div class="articulo" data-aos="zoom-in-right" width="60" height="60">
+        <img src="image/iconcircu.JPG" width="60" height="60">
+        <h3>Topologías de redes en un Circuito Eléctrico y equivalencias</h3>
+        <p>En los circuitos eléctricos existen diferentes configuraciones en sus interconexiones y éstas requieren de un análisis diferente para cada uno de sus casos, lo que conlleva a utilizar diferentes las técnicas matemáticas comprendidas en el apartado anterior (Leyes de Kirchhoff)</p>
+        <a href="#">Read more ---&gt;</a>
+      </div>
+      <div class="articulo" data-aos="zoom-in-right">
+        <img src="image/resistor.svg" width="60" height="60">
+        <h3>Circuito en serie, paralelo y mixto</h3>
+        <p>Los circuitos eléctricos están conectados en diferentes configuraciones que se basan en la alimentación que una misma fuente provee a dos o más cargas, las cuales pueden estar conectadas en serie, paralelo y mixto. En este apartado se aplicarán las leyes básicas de la teoria de circuitos (ley de Ohm y las leyes de Kirchhoff) donde el análisis nodal se basa en la ley de corrientes de Kirchhoff (LCK) y el análisis de lazos o mallas el cual se basa en la ley de tensiones de Kirchhoff (LTK).</p>
+        <a href="#">Read more ---&gt;</a>
+      </div>
+      <div class="articulo" data-aos="zoom-in-right">
+        <img src="image/tech.svg" width="60" height="60">
+        <h3>Métodos de análisis</h3>
+        <p>Después de conocer las técnicas eficaces en el análisis de circuitos eléctricos en el apartado anterior, es posible análizar cualquier circuito lineal mediante la obtención de ecuaciones simultaneas que serán resueltas por medio de métodos para sistemas de ecuaciones lineales para obtener los valores requeridos de corriente o tensión. </p>
+        <a href="#">Read more ---&gt;</a>
+      </div>
+      <div class="articulo" data-aos="zoom-in-right">
+        <img src="image/circuitcon.JPG" width="60" height="60">
+        <h3>Teoremas de circuitos lineales</h3>
+        <p>Los circuitos eléctricos se pueden análizar utilizando diferentes métodos, uno de ellos son las leyes de Kirchhoff aunque muchas veces resulta complejo resolver dichas ecuaciones ya los cálculos se vuelven tediosos. Por lo que a lo largo de la historia el área de los circuitos eléctricos fueron aumentando y así mismo su modo de análisis obligó a los ingenieros a desarrollar teoremas para simplificar el análisis de los circuitos. Entre estos teoremas en este apartado vamos a encontrar análisis desde la superposición, teorema de Thevenin y Norton que permitirán tener un análisis más simplificado en los circuitos eléctricos.</p>
+        <a href="#">Read more ---&gt;</a>
+      </div>
+    </div>
+  </div>
+  <script src=" https://unpkg.com/aos@next/dist/aos.js "> </script>
+  <script>
+    AOS.init();
+  </script>
+  <!--Pie de Página-->
+  <!-- <img src="image/yisus.gif" width="80" height="100"> -->
+  <footer>
+    <!-- <div class="wave2" style="height: 30px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 40px; width: 100%;"><path d="M-66.87,89.30 C104.68,-24.17 335.50,125.81 504.79,42.92 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #ffffff;"></path></svg></div> -->
+    <div class="wave2" style="height: 60px ; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 60%; width: 100%;">
+        <path d="M-0.84,35.03 C91.70,103.13 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #fff;"></path>
+      </svg></div>
+    <div class="pie">
+      <p><b>Copyright © 2020 CircuitFox. Todos los derechos reservados.</b></p>
+      <h4>¡Síguenos!</h4>
+      <div class="social-media">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
+ 
+</body>
+
+</html>
